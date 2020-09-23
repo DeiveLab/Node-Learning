@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+}
+
+.content{
+    max-width: 940px;
+    margin: auto;
+    padding: 0 40px;
+}
+
+h1{
+    color: gray;
+}
+
+h1, p{
+    text-align: center;
+}
+
+.header {
+    display: flex;
+}
+
+.header h1 {
+    flex: 1;
+}
+
+.logo {
+    display: inline-block;
+    background-image: url('/img/weather.png');
+    height: 60px;
+    width: 60px;
+    transform: scale(0.8);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex: 2;
+}
+
+nav a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 20px 40px;
+    height: 43px;
+    line-height: 43px;
+    color: gray;
+}
+
+nav a:hover{
+    color: black;
+}
+
+h1 a {
+    text-decoration: none;
+    color: gray;
+}
+
+.search {
+    position: absolute;
+    top: 316px;
+    left: 50%;
+}
+
+.search form {
+    position: relative;
+    left: -50%;
+}
+
+form input {
+    display: block;
+    width: 500px;
+    padding: 10px 20px;
+    border: 1px solid gray;
+    border-radius: 50px;
+    outline: none;
+}
+
+form button{
+    display: block;
+    margin: 10px auto;
+    padding: 5px 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    outline: none;
+}
+
+form button:hover {
+    cursor: pointer;
+    background-color: lightgray;
+}
+
+@media only screen and (max-width: 600px){
+    form input{
+        width: 380px;
+    }
+}
+
